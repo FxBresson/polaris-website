@@ -1,0 +1,21 @@
+<img/>
+<h1>STATISTIQUES</h1> 
+<nav>
+  <ul>
+    <li>
+      <input (click)="changeStatType(true)" type="button" value="Stats globales"/>
+    </li>
+    <li>
+      <input (click)="changeStatType(false)" type="button" value="Stats individuelles"/>
+    </li>
+  </ul>
+</nav>
+
+<div *ngIf="isGlobalStats else soloStats">
+  <app-skill-rating></app-skill-rating>
+</div>
+
+
+<ng-template #soloStats>
+  SoloStats
+</ng-template>
