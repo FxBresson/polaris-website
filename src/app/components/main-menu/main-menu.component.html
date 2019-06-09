@@ -1,0 +1,7 @@
+<nav>
+  <img src='/assets/logo_white-bg.png'/>
+  <img src='/assets/text_white-bg.png'/>
+  <ul>
+    <li *ngFor="let item of menuItems"><input type="button" (click)="navigate(item.route)" value="{{item.name}}"/></li>
+  </ul>
+</nav>
