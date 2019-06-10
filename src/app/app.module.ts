@@ -8,6 +8,9 @@ import { StatisticsComponent } from './pages/statistics/statistics.component';
 import { StrategyComponent } from './pages/strategy/strategy.component';
 import { SkillRatingComponent } from './components/skill-rating/skill-rating.component';
 
+import { RequesterService } from './services/requester.service';
+import { UserStoreService } from './services/stores/user.store.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +23,10 @@ import { SkillRatingComponent } from './components/skill-rating/skill-rating.com
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    RequesterService,
+    UserStoreService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
