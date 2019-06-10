@@ -9,6 +9,8 @@ import { StrategyComponent } from './pages/strategy/strategy.component';
 import { SkillRatingComponent } from './components/skill-rating/skill-rating.component';
 
 import { RequesterService } from './services/requester.service';
+import { UserStoreService } from './services/stores/user.store.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +25,7 @@ import { RequesterService } from './services/requester.service';
   ],
   providers: [
     RequesterService,
+    UserStoreService,
   ],
   bootstrap: [AppComponent]
 })
